@@ -1,0 +1,46 @@
+ul.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.nav-menu li {
+    float: left;
+}
+
+ul.nav-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav-menu li a:hover {
+    background-color: #111;
+}
+
+form {
+    padding-top: 15px;
+}
+
+input, textarea, form button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+li {
+    padding: 5px 0 5px 0;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li button {
+    margin-left: 15px;
+}
