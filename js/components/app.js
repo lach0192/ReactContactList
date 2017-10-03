@@ -165,8 +165,15 @@ function updateNewListItem(item) {
 }
 function addNewItem(item) {
     let itemList = state.items;
-    let index = state.items[state.items.length-1].id;
     
+    var index = 0;
+    
+    try{
+        index = state.items[state.items.length-1].id;
+    }
+    catch(e){
+        index = 0;
+    }
     
     itemList.push(Object.assign({}, {key: index + 1, id: index + 1}, item));
     setState({listItem:{name: '', email: ''},items: itemList});
